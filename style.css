@@ -1,0 +1,106 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('img/mesa.png'); 
+            background-size: cover;
+            background-position: center;
+            background-color: #e7dfff;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        /* Animação de expandir ao passar o mouse */
+        @keyframes expand {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.1);
+            }
+        }
+        
+        /* Animação de deslizar */
+        @keyframes slideIn {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        header {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 20px;
+        }
+        nav {
+            padding: 20px;
+            text-align: center;
+            background-color: #241c2c; 
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 80px;
+            display: flex; 
+            align-items: center; 
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            
+        }
+        section {
+            padding: 50px;
+            text-align: justify;
+            background-color: #241c2c;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 800px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 0 10px rgba(98, 0, 255, 0.1);
+            transition: all 0.3s ease;
+            animation: slideIn 1s ease-in-out;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-right: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+        }
+        .profile-text {
+            line-height: 1.6;
+            color: #f7e1ff;
+        }
+        footer {
+            background-color: #241c2c;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
