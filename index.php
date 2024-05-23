@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html lang="pt-br">
+
 <html lang="pt-br">
     
 <head>
